@@ -8,18 +8,16 @@ namespace MemeToNervoso
         {
             Console.Clear();
 
-            string opiniao;
+            string resposta = "- E sabe o que eu penso de você?\nVocê é muito sem graça!";
 
             Console.WriteLine("Usuário, qual sua opinião sobre mim? Estou curioso.");
             Console.WriteLine();
 
             Console.Write("Digite sua opinião: ");
-            opiniao = Console.ReadLine();
+            Console.ReadLine();
             Console.WriteLine();
 
-            Console.WriteLine("Interessante seu ponto, mas sabe quem se importa?");
-            Console.ReadKey();
-            Console.WriteLine("Eu mesmo, achou que ia falar outra coisa?");
+            Console.WriteLine(resposta.Remove(43).Insert(43, "... NÃO, PERA.\nTô nervoso"));
         }
     }
 }
